@@ -1,0 +1,53 @@
+body {
+	background-color:gold;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	animation: fadein 3s forwards;
+}
+
+@keyframes fadein {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+.inf {
+	text-align:center;
+	font-size:500%;
+}
+
+.sen1 {
+	font-size:200%;
+	position:relative;
+	text-align:center;
+}
+
+.sen2 {
+	font-size:200%;
+	position:relative;
+	text-align:center;
+}
+
+.sen3 {
+	font-size:200%;
+	position:relative;
+	text-align:center;
+}
+
+.back {
+	position:relative;
+	text-align: center;
+	bottom:-600px;
+}
+
+.back input[type="submit"] {
+		background-color:gold;
+		border: none; /* 枠線を消す */
+		color:black;
+		border-radius: 5px; /* 角を丸くする */
+		font-size: 16px; /* フォントサイズ */
+		cursor: pointer; /* ホバー時のカーソル */
+		transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+		font-size:130%;
+		position:relative;
+		top:-500px;
+}

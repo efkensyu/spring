@@ -1,0 +1,296 @@
+2025-07-02 16:17:20.961840+09:00 database: opening C:/pleiades/2024-12/workspace/demo/db/testdb (build 232)
+2025-07-02 16:17:20.966844+09:00 database: opened C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:20.966844+09:00 database: connecting session #3 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:20.967845+09:00 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:20.967845+09:00 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:20.967845+09:00 jdbc[3]: 
+/**/Connection conn50 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:20.967845+09:00 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:20.968846+09:00 jdbc[3]: 
+/*SQL */;
+2025-07-02 16:17:20.968846+09:00 jdbc[3]: 
+/*SQL */DROP TABLE IF EXISTS BUMON_TBL;
+2025-07-02 16:17:20.969851+09:00 jdbc[3]: 
+/*SQL */CREATE TABLE BUMON_TBL( BUMON_CD CHAR(3), BUMON_NM VARCHAR2(20), PRIMARY KEY(BUMON_CD) );
+2025-07-02 16:17:20.969851+09:00 jdbc[3]: 
+/*SQL */DROP TABLE IF EXISTS SHAIN_TBL;
+2025-07-02 16:17:20.969851+09:00 jdbc[3]: 
+/*SQL */CREATE TABLE IF NOT EXISTS SHAIN_TBL( SHAIN_CD CHAR(5), SHAIN_NM VARCHAR2(30), BUMON_CD CHAR(3), KANRI_CD CHAR(3), JYUSHO VARCHAR2(60), DENWA CHAR(10), SEIBETSU CHAR(1), NYUSHA_DATE CHAR(8), NENREI NUMBER(3), YAKUSHOKU_CD CHAR(4), KYURYO NUMBER(7), JYOCHO_CD CHAR(5), TAISHOKU_DATE CHAR(8), PRIMARY KEY(SHAIN_CD) );
+2025-07-02 16:17:20.970851+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B01', '\u958b\u767a\u90e8');
+2025-07-02 16:17:20.970851+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B02', '\u6280\u8853\u90e8');
+2025-07-02 16:17:20.971852+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B03', '\u7ba1\u7406\u90e8');
+2025-07-02 16:17:20.971852+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B04', '\u7dcf\u52d9\u90e8');
+2025-07-02 16:17:20.971852+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B05', '\u55b6\u696d\u90e8');
+2025-07-02 16:17:20.971852+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0001', '\u9234\u6728', 20);
+2025-07-02 16:17:20.972853+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0002', '\u7530\u4e2d', 30);
+2025-07-02 16:17:20.972853+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0003', '\u4f50\u85e4', 40);
+2025-07-02 16:17:20.972853+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0004', '\u4f0a\u85e4', 50);
+2025-07-02 16:17:20.985043+09:00 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2025-07-02 16:17:21.069334+09:00 database: connecting session #4 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.069334+09:00 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.070338+09:00 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.070338+09:00 jdbc[4]: 
+/**/Connection conn51 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.070338+09:00 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.100841+09:00 database: connecting session #5 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.100841+09:00 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.100841+09:00 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.101843+09:00 jdbc[5]: 
+/**/Connection conn52 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.101843+09:00 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.134660+09:00 database: connecting session #6 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.134660+09:00 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.134660+09:00 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.134660+09:00 jdbc[6]: 
+/**/Connection conn53 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.135660+09:00 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.165925+09:00 database: connecting session #7 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.166997+09:00 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.166997+09:00 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.166997+09:00 jdbc[7]: 
+/**/Connection conn54 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.166997+09:00 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.197959+09:00 database: connecting session #8 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.198959+09:00 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.198959+09:00 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.198959+09:00 jdbc[8]: 
+/**/Connection conn55 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.198959+09:00 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.231028+09:00 database: connecting session #9 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.231028+09:00 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.231028+09:00 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.232023+09:00 jdbc[9]: 
+/**/Connection conn56 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.232023+09:00 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.265120+09:00 database: connecting session #10 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.266128+09:00 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.267129+09:00 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.267129+09:00 jdbc[10]: 
+/**/Connection conn57 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.268129+09:00 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.300480+09:00 database: connecting session #11 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.301480+09:00 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.302488+09:00 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.302488+09:00 jdbc[11]: 
+/**/Connection conn58 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.303489+09:00 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:21.335549+09:00 database: connecting session #12 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:17:21.335549+09:00 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:17:21.335549+09:00 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:17:21.335549+09:00 jdbc[12]: 
+/**/Connection conn59 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:17:21.337054+09:00 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:17:40.862882+09:00 jdbc[3]: 
+/*SQL l:76 #:1*/select b1_0.bumon_cd,b1_0.bumon_nm from bumon_tbl b1_0 where b1_0.bumon_cd=? {1: 'B02'};
+2025-07-02 16:17:40.863871+09:00 jdbc[3]: 
+/*SQL l:74 #:1*/SELECT SETTING_VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE SETTING_NAME=? {1: 'QUERY_TIMEOUT'};
+2025-07-02 16:18:04.799433+09:00 database: disconnecting session #3
+2025-07-02 16:18:04.799433+09:00 database: disconnected session #3
+2025-07-02 16:18:04.799433+09:00 database: disconnecting session #4
+2025-07-02 16:18:04.799433+09:00 database: disconnected session #4
+2025-07-02 16:18:04.799433+09:00 database: disconnecting session #5
+2025-07-02 16:18:04.799433+09:00 database: disconnected session #5
+2025-07-02 16:18:04.799433+09:00 database: disconnecting session #6
+2025-07-02 16:18:04.799433+09:00 database: disconnected session #6
+2025-07-02 16:18:04.799433+09:00 database: disconnecting session #7
+2025-07-02 16:18:04.800432+09:00 database: disconnected session #7
+2025-07-02 16:18:04.800432+09:00 database: disconnecting session #8
+2025-07-02 16:18:04.800432+09:00 database: disconnected session #8
+2025-07-02 16:18:04.800432+09:00 database: disconnecting session #9
+2025-07-02 16:18:04.800432+09:00 database: disconnected session #9
+2025-07-02 16:18:04.800432+09:00 database: disconnecting session #10
+2025-07-02 16:18:04.801432+09:00 database: disconnected session #10
+2025-07-02 16:18:04.801432+09:00 database: disconnecting session #11
+2025-07-02 16:18:04.801432+09:00 database: disconnected session #11
+2025-07-02 16:18:04.801432+09:00 database: disconnecting session #12
+2025-07-02 16:18:04.801432+09:00 database: closing C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:04.805434+09:00 database: closed
+2025-07-02 16:18:04.805434+09:00 database: disconnected session #12
+2025-07-02 16:18:04.982719+09:00 database: opening C:/pleiades/2024-12/workspace/demo/db/testdb (build 232)
+2025-07-02 16:18:04.987719+09:00 database: opened C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:04.988720+09:00 database: connecting session #3 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:04.988720+09:00 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:04.988720+09:00 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:04.988720+09:00 jdbc[3]: 
+/**/Connection conn60 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:04.988720+09:00 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:04.989720+09:00 jdbc[3]: 
+/*SQL */;
+2025-07-02 16:18:04.989720+09:00 jdbc[3]: 
+/*SQL */DROP TABLE IF EXISTS BUMON_TBL;
+2025-07-02 16:18:04.989720+09:00 jdbc[3]: 
+/*SQL */CREATE TABLE BUMON_TBL( BUMON_CD CHAR(3), BUMON_NM VARCHAR2(20), PRIMARY KEY(BUMON_CD) );
+2025-07-02 16:18:04.990721+09:00 jdbc[3]: 
+/*SQL */DROP TABLE IF EXISTS SHAIN_TBL;
+2025-07-02 16:18:04.990721+09:00 jdbc[3]: 
+/*SQL */CREATE TABLE IF NOT EXISTS SHAIN_TBL( SHAIN_CD CHAR(5), SHAIN_NM VARCHAR2(30), BUMON_CD CHAR(3), KANRI_CD CHAR(3), JYUSHO VARCHAR2(60), DENWA CHAR(10), SEIBETSU CHAR(1), NYUSHA_DATE CHAR(8), NENREI NUMBER(3), YAKUSHOKU_CD CHAR(4), KYURYO NUMBER(7), JYOCHO_CD CHAR(5), TAISHOKU_DATE CHAR(8), PRIMARY KEY(SHAIN_CD) );
+2025-07-02 16:18:04.991723+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B01', '\u958b\u767a\u90e8');
+2025-07-02 16:18:04.992721+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B02', '\u6280\u8853\u90e8');
+2025-07-02 16:18:04.992721+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B03', '\u7ba1\u7406\u90e8');
+2025-07-02 16:18:04.992721+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B04', '\u7dcf\u52d9\u90e8');
+2025-07-02 16:18:04.992721+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO bumon_tbl VALUES('B05', '\u55b6\u696d\u90e8');
+2025-07-02 16:18:04.993722+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0001', '\u9234\u6728', 20);
+2025-07-02 16:18:04.993722+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0002', '\u7530\u4e2d', 30);
+2025-07-02 16:18:04.993722+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0003', '\u4f50\u85e4', 40);
+2025-07-02 16:18:04.993722+09:00 jdbc[3]: 
+/*SQL #:1*/INSERT INTO shain_tbl(shain_cd,shain_nm,nenrei) VALUES('S0004', '\u4f0a\u85e4', 50);
+2025-07-02 16:18:05.005232+09:00 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2025-07-02 16:18:05.090098+09:00 database: connecting session #4 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.091098+09:00 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.091098+09:00 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.091098+09:00 jdbc[4]: 
+/**/Connection conn61 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.091098+09:00 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.121781+09:00 database: connecting session #5 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.121781+09:00 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.121781+09:00 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.121781+09:00 jdbc[5]: 
+/**/Connection conn62 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.121781+09:00 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.153418+09:00 database: connecting session #6 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.153418+09:00 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.154421+09:00 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.154421+09:00 jdbc[6]: 
+/**/Connection conn63 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.154421+09:00 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.185432+09:00 database: connecting session #7 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.186430+09:00 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.186430+09:00 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.186430+09:00 jdbc[7]: 
+/**/Connection conn64 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.186430+09:00 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.218958+09:00 database: connecting session #8 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.218958+09:00 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.218958+09:00 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.219952+09:00 jdbc[8]: 
+/**/Connection conn65 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.219952+09:00 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.252959+09:00 database: connecting session #9 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.253951+09:00 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.253951+09:00 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.254959+09:00 jdbc[9]: 
+/**/Connection conn66 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.254959+09:00 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.287518+09:00 database: connecting session #10 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.288533+09:00 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.288533+09:00 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.288533+09:00 jdbc[10]: 
+/**/Connection conn67 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.288533+09:00 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.319527+09:00 database: connecting session #11 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.320540+09:00 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.320540+09:00 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.320540+09:00 jdbc[11]: 
+/**/Connection conn68 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.320540+09:00 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:05.352348+09:00 database: connecting session #12 to C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:18:05.353354+09:00 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_SYSTEM_OUT 2;
+2025-07-02 16:18:05.353354+09:00 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2025-07-02 16:18:05.353354+09:00 jdbc[12]: 
+/**/Connection conn69 = DriverManager.getConnection("jdbc:h2:file:./db/testdb;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2", "SA\t", "");
+2025-07-02 16:18:05.354372+09:00 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2025-07-02 16:18:16.663160+09:00 jdbc[3]: 
+/*SQL l:76 #:1*/select b1_0.bumon_cd,b1_0.bumon_nm from bumon_tbl b1_0 where b1_0.bumon_cd=? {1: 'B02'};
+2025-07-02 16:18:16.664161+09:00 jdbc[3]: 
+/*SQL l:74 #:1*/SELECT SETTING_VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE SETTING_NAME=? {1: 'QUERY_TIMEOUT'};
+2025-07-02 16:19:06.882370+09:00 database: disconnecting session #3
+2025-07-02 16:19:06.882370+09:00 database: disconnected session #3
+2025-07-02 16:19:06.882370+09:00 database: disconnecting session #4
+2025-07-02 16:19:06.882370+09:00 database: disconnected session #4
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #5
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #5
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #6
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #6
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #7
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #7
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #8
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #8
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #9
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #9
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #10
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #10
+2025-07-02 16:19:06.883368+09:00 database: disconnecting session #11
+2025-07-02 16:19:06.883368+09:00 database: disconnected session #11
+2025-07-02 16:19:06.884370+09:00 database: disconnecting session #12
+2025-07-02 16:19:06.884370+09:00 database: closing C:/pleiades/2024-12/workspace/demo/db/testdb
+2025-07-02 16:19:06.886109+09:00 database: closed
+2025-07-02 16:19:06.887115+09:00 database: disconnected session #12

@@ -1,0 +1,328 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	padding-bottom:50px;
+	font-family:Arial, sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+.bar {
+    position:relative;
+    text-align:center;
+    top:-740px;
+}
+
+.bar input[type="text"] {
+    position:relative;
+    height:40px;
+    border-radius:80px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border:none;
+	outline: none;
+}
+input[type="text"] {
+	text-indent:40px;
+}
+.google {
+    font-size:14px;
+    position:relative;
+    bottom:-13px;
+    right:-18px;
+}
+
+.store {
+    font-size:14px;
+    position:relative;
+    top:-7px;
+    right:-140px;
+}
+
+.gmail {
+    font-size:12.5px;
+    position:relative;
+    top:-27px;
+    right:-1280px;
+}
+
+.image {
+    font-size:12.5px;
+    position:relative;
+    top:-45px;
+    right:-1330.5px;
+}
+
+.g1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size:90px;
+    font-weight:600;
+    color: #4285F4;
+    position:relative;
+    top:-80px;
+    right:-600px;
+}
+
+.o1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size:90px;
+    font-weight:600;
+    color:#EA4335;
+    position:relative;
+    top:-214.5px;
+    right:-670px;
+}
+
+.o2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size:90px;
+    font-weight:600;
+    color:#FBBC05;
+    position:relative;
+    top:-349px;
+    right:-728px;
+}
+
+.g2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size:90px;
+    font-weight:600;
+    color:#4285F4;
+    position:relative;
+    top:-483.5px;
+    right:-786px;
+}
+
+.l {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size:90px;
+    font-weight:600;
+    color:#34A853;
+    position:relative;
+    top:-618px;
+    right:-844px;
+}
+
+.e {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size:90px;
+    font-weight:600;
+    color:#EA4335;
+    position:relative;
+    top:-752px;
+    right:-865px;
+}
+
+.wrapper {
+  flex:1;
+}
+
+.footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+    flex-shrink: 0;
+	height:-50px;
+    bottom:0;
+	left:0;
+    background-color:#f2f2f2;
+	font-size:14px;
+    color: black;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	content:"";
+	border-top:1px solid #dadce0;
+	position:fixed;
+}
+
+.footer-content {
+    position: relative; /* 横線と重ならないよう */
+    line-height: 12px; /* フッターの高さに合わせて中央寄せ */
+ }
+  
+ .footer::before {
+    content: "";
+    position: absolute;
+    top: 50%;  /* 高さの中央 */
+    left: 10%;
+    width: 80%;
+    border-top: 1px solid #dadce0;
+    transform: translateY(-50%); /* 完全に中央に */
+ }
+	
+.footer-top, .footer-bottom {
+	background: #f2f2f2; /* 横線にかぶらないように背景を揃える */
+	padding: 0 10px;
+	z-index: 1; /* 線より前面 */
+}
+	  
+.footer-top {
+	margin-bottom: 5px;
+}
+	
+.japan {
+	font-size:107%;
+	position:relative;
+	right:-30px;
+	bottom:-20px;
+}
+	
+.ad {
+	font-size:107%;
+	position:relative;
+	bottom:-50px;
+	right:-40px;
+}
+	
+.bis {
+	font-size:107%;
+	position:relative;
+	bottom:-38px;
+	right:-100px;
+}
+	
+.rog {
+	font-size:107%;
+	position:relative;
+	bottom:-26px;
+	right:-185px;
+}
+	
+.pri {
+	font-size:107%;
+	position:relative;
+	bottom:-14px;
+	right:-1270px;
+}
+	
+.term {
+	font-size:107%;
+	position:relative;
+	bottom:-2px;
+	right:-1390px;
+}
+	
+.set {
+	font-size:107%;
+	position:relative;
+	bottom:10px;
+	right:-1450px;
+}
+.c {
+	position: relative;
+	top:-805px;
+	left: 750px; 
+	font-size: 14px;
+	color: rgb(61, 58, 58);
+}
+.b {
+	position: relative;
+	top:-765px;
+	left: 600px; 
+	font-size: 14px;
+	color: rgb(61, 58, 58);
+}
+.c, .b{
+	background: rgb(249, 249, 249);
+	display: flex;
+	width: 130px;
+	height: 40px;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+}
+.d {
+	position: relative;
+	top:-70px;
+	left: 1370px; 
+	background-color: (255,255,255,0.5);
+}
+.en {
+	position: relative;
+	top:-102px;
+	left: 1405px; 
+	background-color: (255,255,255,0.5);
+}
+.ic {
+	position: relative;
+	top:-145px;
+	left: 1442px; 
+	background-color: (255,255,255,0.5);
+}
+.mc {
+	position: relative;
+	top:-773px;
+	left: 950px; 
+	background-color: (255,255,255,0.5);
+	}
+	.km {
+	position: relative;
+	top:-799.5px;
+	left: 987px; 
+	background-color: (255,255,255,0.5);
+}
+.cla {
+	position: relative;
+	top:-840px;
+	left: 410px;
+}
+.pa {
+	position: relative;
+	top:-1000px;
+	left: 80px;
+}
+.coun {
+	position:relative;
+	top:-715px;
+	right:-1100px;
+	font-size:90%;
+}
+		
+.cle {
+	position:relative;
+	font-size:90%;
+	top:-10px;
+}
+		
+.pre {
+	position:relative;
+	font-size:90%;
+	bottom:-10px
+}
+		
+.cou {
+	position:relative;
+	font-size:120%;
+	top:-12px;
+	right:-200px;
+}
+		
+.show {
+	background-color: rgb(253, 253, 253);
+	padding: 20px;
+	height: -20px;
+	overflow:hidden;
+	position: relative;
+	top:-700px;
+	width:15%;
+	right:-1100px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border-radius: 8px;  /* ← 見た目をきれいに */
+}
+.mm {
+	position: absolute;
+	top:282px;
+	left: 487px; 
+	background-color: (255,255,255,0.5);
+}
+

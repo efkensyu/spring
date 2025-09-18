@@ -1,0 +1,90 @@
+
+body {
+	background-color:gold;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	animation: fadein 3s forwards;
+}
+
+@keyframes fadein {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+.exp {
+	background-color:black;
+	padding: 20px 0;
+	color:white;
+	text-align:center;
+	font-size:400%;
+	content:"";
+	width:25%;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 auto;
+	position:relative;
+	bottom:-50px;
+}
+
+.ihen {
+	font-size:200%;
+	position:relative;
+	bottom:-90px;
+	right:-270px;
+}
+
+.des {
+	font-size:200%;
+	position:relative;
+	bottom:-120px;
+	right:-270px;
+}
+
+.cor {
+	font-size:200%;
+	position:relative;
+	bottom:-150px;
+	right:-270px;
+}
+
+.com {
+	font-size:200%;
+	position:relative;
+	bottom:-180px;
+	right:-270px;
+}
+
+.sta {
+	position:relative;
+	position: absolutes;
+	text-align: center;
+	bottom:-545px;
+}
+
+.sta input[type="submit"] {
+		background-color:gold;
+		border: none; /* 枠線を消す */
+		color:black;
+		border-radius: 5px; /* 角を丸くする */
+		font-size: 16px; /* フォントサイズ */
+		cursor: pointer; /* ホバー時のカーソル */
+		transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+		font-size:130%;
+		position:relative;
+		top:-300px;
+}
+.scr {
+	font-size:200%;
+	position:relative;
+	bottom:-200px;
+	right:-265px;
+}
+
+
+
+
+
+
+
+
+
+
