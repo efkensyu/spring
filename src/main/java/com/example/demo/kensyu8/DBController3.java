@@ -21,11 +21,11 @@ import lombok.RequiredArgsConstructor;
 public class DBController3 {		
 	private final DBService3 dbService3;			
 		
-	@GetMapping("/db3")			
+	@GetMapping("/dbsample")			
 	public String index () {
 		return "kensyu8/DB1_1";		
 	}	
-	@PostMapping("/db3")			
+	@PostMapping("/dbsample")			
 	public String send (@RequestParam("BumonCd") String code,Model model) {
 		List<Bumon> userDataList = dbService3.findByBumonCd(code);
 		//System.out.println(userDataList.get(0));
