@@ -16,9 +16,9 @@ public class DBService3 {
 		
 	public List<Bumon> findByBumonCd(String code){		
 		//自動生成した場合
-		return repository.findByBumonCd(code);
+		//return repository.findByBumonCd(code);
 		
 		//@Queryした場合
-		//return repository.findBumonCd(code);
+		return repository.findBumonCd(code);
 	}	
 }
